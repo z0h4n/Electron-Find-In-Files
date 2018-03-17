@@ -1,0 +1,25 @@
+{
+  "name": "electron-find-in-files",
+  "productName": "Find In Files",
+  "version": "1.0.0",
+  "description": "An App for searching text in all files in a directory (Built using Electron - https://electronjs.org/)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "app",
+    "find-in-files"
+  ],
+  "author": "z0h4n",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "1.8.3"
+  },
+  "dependencies": {
+    "find": "^0.2.9",
+    "find-in-file": "^1.0.1",
+    "jquery": "^3.3.1"
+  }
+}

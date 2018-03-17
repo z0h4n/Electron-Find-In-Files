@@ -1,0 +1,52 @@
+<head>
+  <title>Find-In-Files - An Electron App</title>
+
+  <head>
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="directory">
+      <span class="button_span">
+        <button class="button">
+          Directory
+        </button>
+      </span>
+      <span class="input_span">
+        <input class="input" type="text" value="" disabled>
+      </span>
+
+    </div>
+    <div class="search">
+      <span class="button_span">
+        <button class="button">
+          Search
+        </button>
+      </span>
+      <span class="input_span">
+        <input class="input" type="text" value="">
+      </span>
+    </div>
+
+    <textarea class="results" readonly></textarea>
+
+    <div class="progress">
+      <div class="progress_bar"></div>
+      <div class="progress_text"></div>
+    </div>
+
+    <div class="loader">
+      <div class="icon"></div>
+    </div>
+
+    <div class="error">
+      <div class="msgbox">
+        <div class="header">Error</div>
+        <div class="msg"></div>
+        <button class="button">OK</button>
+      </div>
+    </div>
+
+    <script src="finder.js"></script>
+  </body>
+</head>
