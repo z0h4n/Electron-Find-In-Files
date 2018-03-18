@@ -8,6 +8,14 @@
     "start": "electron .",
     "dist": "electron-builder"
   },
+  "build": {
+    "mac": {
+      "icon": "icons/mac/icon.icns"
+    },
+    "win": {
+      "icon": "icons/icon.png"
+    }
+  },
   "keywords": [
     "electron",
     "app",
