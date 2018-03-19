@@ -30,6 +30,8 @@
   "dependencies": {
     "find": "^0.2.9",
     "find-in-file": "^1.0.1",
-    "jquery": "^3.3.1"
+    "find-in-files": "^0.5.0",
+    "jquery": "^3.3.1",
+    "recursive-search": "^1.0.1"
   }
 }
