@@ -5,7 +5,6 @@ const path = require('path');
 let main_window = null;
 
 function createWindow() {
-  // main_window = new BrowserWindow({ height: 185, minHeight: 185, maxHeight: 185, minWidth: 800, maximizable: false });
   main_window = new BrowserWindow({ height: 185, minHeight: 185, width: 800, minWidth: 800 });
 
   main_window.on('closed', function () {

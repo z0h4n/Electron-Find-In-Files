@@ -8,8 +8,7 @@ const search = require('recursive-search');
 const finder = {
   dir: '',
   is_searching: false,
-  filter_ext: [],
-  filter_files: [],
+  search_filter: '',
 
   init() {
     $("#directory").on("click", finder.selectDirectory);
@@ -52,27 +51,7 @@ const finder = {
   },
 
   onSearchComplete(results) {
-    console.log('results');
-  },
-
-  filesFound(files = [], search_text) {
-    $(this.elem.loader).hide();
-    // findInFiles(files, search_text, this.matchFound, this.searchComplete);
-  },
-
-  matchFound(file, occurences) {
-    this.addResult(`${file.replace(this.dir, '')} - [${occurences} hits]\n`);
-  },
-
-  searchComplete(stats) {
-    this.addResult(`\nFinished searching ${stats.total_files} files`);
-    this.addResult(`\nFound ${stats.total_hits} hits in ${stats.total_files_hit} files`);
-  },
-
-  addResult(text = '') {
-    this.results += text;
-    this.elem.results.value = this.results;
-    this.elem.results.scrollTop = this.elem.results.scrollHeight;
+    console.log(results);
   }
 };
 
