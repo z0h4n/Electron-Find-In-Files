@@ -16,3 +16,22 @@ body {
 .vaTop {
   vertical-align: top;
 }
+
+#results {
+  white-space: pre;
+}
+
+#progress {
+  width: 100%;
+  height: 5px;
+  background-color: darkgray;
+  margin-top: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#progress_fill {
+  width: 0%;
+  height: 100%;
+  background-color: gray;
+}
