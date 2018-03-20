@@ -17,20 +17,7 @@ function createWindow() {
     slashes: true
   }));
 
-  main_window.webContents.openDevTools();
+  // main_window.webContents.openDevTools();
 }
 
-function createMenu() {
-  const template = [
-    {
-      label: app.getName(),
-      submenu: [{ role: 'about' }]
-    }
-  ];
-  Menu.setApplicationMenu(Menu.buildFromTemplate(template));
-}
-
-app.on('ready', function () {
-  // createMenu();
-  createWindow();
-});
+app.on('ready', createWindow);
