@@ -87,7 +87,7 @@ const finder = {
 
   searchInFiles(file_index) {
     const file = finder.files_to_search[file_index];
-    const char_limit = 32;
+    const char_limit = 28;
 
     $('#search_current').text(`...${file.substr(-char_limit, file.length)}`);
 

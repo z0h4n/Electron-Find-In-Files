@@ -49,6 +49,11 @@ function about(parent_window) {
     maximizable: false
   });
 
+  // -- Remove menu bar from about window on Windows
+  if (process.platform !== 'darwin') {
+    about_window.setMenu(null);
+  }
+
   about_window.on('closed', function () {
     about_window = null;
   });
