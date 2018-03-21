@@ -1,8 +1,6 @@
 const $ = require('jquery');
-const find = require('find');
 const { dialog } = require('electron').remote;
 const findInFile = require('find-in-file');
-const findInFiles = require('find-in-files');
 const path = require('path');
 const fileFinder = require('recursive-search');
 
@@ -91,7 +89,7 @@ const finder = {
     const file = finder.files_to_search[file_index];
     const char_limit = 32;
 
-    $('#search_current').text(file.length > char_limit ? `...${file.substr(-char_limit, file.length)}` : file);
+    $('#search_current').text(`...${file.substr(-char_limit, file.length)}`);
 
     findInFile({ files: file, find: finder.text_to_search }, function (err, matchedFiles) {
       if (matchedFiles.length) {

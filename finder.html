@@ -1,36 +1,37 @@
+<html>
+
 <head>
-  <title>Find-In-Files - An Electron App</title>
+  <link href="style.css" rel="stylesheet">
+</head>
 
-  <head>
-    <link href="style.css" rel="stylesheet">
-  </head>
-
-  <body>
-    <div style="width: 100%; height: calc(100% - 15px)">
-      <div class="table" style="height: 100%">
-        <div class="cell vaTop" style="width: 390px;">
-          <div id="directory" style="margin-bottom: 10px;">
-            <input disabled style="width: calc(100% - 5px);" type="text" placeholder="Click here to select the folder to search">
-          </div>
-          <input id="search_text" style="width: calc(100% - 5px); margin-bottom: 10px;" type="text" placeholder="Enter the text to search">
-          <input id="search_filter" style="width: calc(100% - 5px); margin-bottom: 10px;" type="text" placeholder="Search filter - e.g. index.html, .js, data.json">
-          <div class="table">
-            <div class="cell" style="width: 15%;">
-              <button id="search" style="width: 100px;">Search</button>
-            </div>
-            <div class="cell" style="padding-right: 5px; text-align: right;">
-              <span id="search_current" style="width: 100%"></span>
-            </div>
-          </div>
+<body>
+  <div style="width: 100%; height: calc(100% - 15px)">
+    <div class="table" style="height: 100%">
+      <div class="cell vaTop" style="width: 390px;">
+        <div id="directory" style="margin-bottom: 10px;">
+          <input disabled style="width: calc(100% - 5px);" type="text" placeholder="Click here to select the folder to search">
         </div>
-        <div class="cell vaTop">
-          <textarea id="results" disabled style="width: 100%; height: 100%; resize: none" placeholder="Search Results"></textarea>
+        <input id="search_text" style="width: calc(100% - 5px); margin-bottom: 10px;" type="text" placeholder="Enter the text to search">
+        <input id="search_filter" style="width: calc(100% - 5px); margin-bottom: 10px;" type="text" placeholder="Search filter - e.g. index.html, .js, data.json">
+        <div class="table">
+          <div class="cell" style="width: 15%;">
+            <button id="search" style="width: 100px;">Search</button>
+          </div>
+          <div class="cell" style="padding-right: 5px; text-align: right;">
+            <span id="search_current" style="width: 100%"></span>
+          </div>
         </div>
       </div>
+      <div class="cell vaTop">
+        <textarea id="results" disabled style="width: 100%; height: 100%; resize: none" placeholder="Search Results"></textarea>
+      </div>
     </div>
-    <div id="progress">
-      <div id="progress_fill"></div>
-    </div>
-    <script src="finder.js"></script>
-  </body>
-</head>
+  </div>
+  <div id="progress">
+    <div id="progress_fill"></div>
+  </div>
+  <script src="killDND.js"></script>
+  <script src="finder.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<html>
+
+<body style="font-size: 100%; font-family: monospace; text-align: center; font-weight: bold;">
+  <div>
+    <img src="icons/icon.png" width="70%" style="position: relative; left: 10px;">
+  </div>
+  <div id="version" style="margin-top: 10px;"></div>
+  <script src="killDND.js"></script>
+  <script>
+    const { app } = require('electron').remote;
+    document.getElementById('version').innerText = `v${app.getVersion()}`;
+  </script>
+</body>
+
+</html>
